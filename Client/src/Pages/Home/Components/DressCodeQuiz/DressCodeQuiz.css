@@ -1,0 +1,67 @@
+.mainContainerDCQuiz{
+    background-image: url('../../../../Assets/images/menHeader.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    max-width: 934px;
+}
+.dressCodeQuizDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.takeQuizDCBtn{
+    background: #25282A;
+border-radius: 23px;
+width: 227px;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 141.6%;
+/* identical to box height, or 51px */
+border: none;
+
+color: #FFFFFF;
+height: 60px;
+
+
+}
+.dressCodeQuizImg{
+    /* width: 100%; */
+}
+.topMainContainerDCQuiz{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 367px;
+    padding-top: 50px;
+    align-items: center;
+}
+
+@media (max-width:949px) {
+    .mainContainerDCQuiz{
+        background-position: center;
+    }
+    .dressCodeQuizImg {
+        width: 90%;
+    }
+}
+
+@media (max-width:600px) {
+    .takeQuizDCBtn {
+        width: 170px;
+        font-size: 16px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    
+}

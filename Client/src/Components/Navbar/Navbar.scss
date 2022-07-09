@@ -1,0 +1,297 @@
+.main_nav {
+    height: 67px;
+    width: 100%;
+    background: #25282A;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+
+    .nav_main_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cart_nav {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            position: relative;
+            cursor: pointer;
+            .count {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 15px;
+                height: 15px;
+                background-color: red;
+                font-size: .6rem;
+                border-radius: 50rem;
+                top: 0;
+                left: -5px;
+            }
+        }
+
+        .nav_content_left {
+            display: flex;
+            align-items: center;
+            gap: 37px;
+            padding-left: 14px;
+
+            // @media(max-width:1150px){
+            //  gap: 30px;
+            // }
+            // @media(max-width:900px){
+            //  gap: 18px;
+            // }
+
+            .nav_logo {
+                width: 60px;
+                height: 41px;
+            }
+
+
+            .nav_items {
+                color: white;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 51px;
+                letter-spacing: 0em;
+                cursor: pointer;
+
+                @media(max-width:750px) {
+                    display: none;
+                }
+
+            }
+        }
+
+
+
+        .nav_content_right {
+            display: flex;
+            padding-right: 18px;
+            gap: 20px;
+            align-items: center;
+
+            @media(max-width:900px) {
+                gap: 10px;
+                padding-right: 30px;
+            }
+
+            .get button {
+                height: 32px;
+                width: 100px;
+                border-radius: 12px;
+                border: 1px solid #C6A992;
+                border-radius: 17px;
+                color: #C6A992;
+                font-family: Barlow;
+                background: transparent;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 45px;
+                letter-spacing: 0em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                @media(max-width:750px) {
+                    display: none;
+                }
+
+            }
+
+
+
+            .sign button {
+
+                height: 32px;
+                width: 100px;
+                text-align: center;
+                background: transparent;
+                font-family: 'Barlow';
+                font-style: normal;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: 0em;
+                border: 1px solid #FFFFFF;
+                border-radius: 17px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                @media(max-width:750px) {
+                    display: none;
+                }
+
+
+            }
+
+        }
+
+    }
+
+
+    .line {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 27px;
+
+
+        @media(max-width:1200px) {
+            padding-top: 10px;
+        }
+
+        @media(max-width:750px) {
+            display: none;
+        }
+
+        hr {
+            border: 2px solid #5A5A5A;
+            width: 95%;
+
+            @media(max-width:1440px) {
+
+                border: 1px solid #5A5A5A;
+
+            }
+        }
+
+    }
+
+
+    .ham_nav {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: none;
+
+        @media(max-width:750px) {
+            display: block;
+        }
+
+        .menu {
+            color: white;
+            font-size: 30px;
+        }
+
+    }
+
+}
+
+
+
+.ham_nav_main {
+    height: 100vh;
+    background: #25282A;
+    color: white;
+
+    .icons {
+        color: white !important;
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 22px;
+    }
+
+    .navbar__container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    .items {
+        color: white;
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        letter-spacing: 0em;
+    }
+
+    .sign button {
+
+        width: 120px;
+        height: 50px;
+        font-size: 19px;
+        border: 1px solid #FFFFFF;
+        text-align: center;
+        background: transparent;
+        font-family: 'Barlow';
+        font-style: normal;
+        border-radius: 12px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+
+
+    .get button {
+
+        border-radius: 12px;
+        width: 130px;
+        height: 50px;
+        font-size: 19px;
+        border: 1px solid #FFFFFF;
+        border-radius: 12px;
+        color: #FFFFFF;
+        font-family: Barlow;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+}
+
+.cart_model {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem;
+    background-color: white;
+    padding: 1rem 0;
+    border-radius: 10px;
+
+    .heading {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #25282A;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            margin: 0;
+        }
+
+        .icon {
+            font-size: 1.3rem;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+}
+
+.MuiModal-root {
+    overflow-y: scroll;
+}
